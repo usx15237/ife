@@ -1,0 +1,5 @@
+strong{color:red;}
+.carrot{color:orange;}
+.spinach{color:yellow;}
+#first{color:green;}
+<!--第一个'C',class值为carrot,又为<strong>内容，由于类选择器优先级高于标签选择器，故'C'为橘红色-->

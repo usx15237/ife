@@ -1,0 +1,20 @@
+.homepage:link
+{
+padding: 1px 10px 1px 10px;
+color: yellow;
+background:red;
+border 1px green;
+font-style:italic;
+font-size:14px;
+}
+.homepage:visited
+{
+color: yellow;
+background:orange;
+}
+
+.homepage:hover
+{
+background:blue;
+}
+<!--好吧，对超链接不是很懂-->

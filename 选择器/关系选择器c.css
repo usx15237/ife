@@ -1,0 +1,3 @@
+#table_1 td:first-child{font-weight:bolder;}
+#table_1 td:first-child + td{font-weight:900;}
+<!--first-child，意为第一个td元素,first-child，意为第二个td元素-->
