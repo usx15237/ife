@@ -1,0 +1,4 @@
+.menu-bar ul ul{display:none;}
+<!--表示对那些class是menu-bar,tag是ul的元素而言，它所有的ul后代都不显示-->
+.menu-bar li:hover>ul{display:block;}
+<!--表示对那些class是menu-bar,tag是li的元素而言，当鼠标放在它上面时，它的子（不是后代）元素（可能有多个）中，tag为ul的（可能有多个），会显示-->
