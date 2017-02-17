@@ -1,0 +1,5 @@
+li.open{list-style:circle;}
+<!--表示在tag为li的元素中筛选class为open的，加以相应的标记样式-->
+li.closed{list-style:disc;}
+ol.info{list-style:upper-latin;}
+<!--表示在tag为ol的元素的子元素中筛选class为open的，加以相应的标记样式-->
