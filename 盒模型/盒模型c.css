@@ -1,0 +1,14 @@
+h1{
+     border-top:4px solid yellow;
+     border-bottom:4px solid yellow;
+     background-color:red;
+     color:blue;
+  }
+p.p2{
+    border:2px solid red;
+    padding-top:24px;
+    margin-right:24px;
+}  
+<!--设置了边框顶部和底部的相关属性，背景颜色和元素颜色-->
+<!--设置了内外边距-->
+<!--背景可以设置颜色，内外边距可以设置大小，边框可以设置颜色和大小-->

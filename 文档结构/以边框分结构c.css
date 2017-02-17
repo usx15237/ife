@@ -14,3 +14,9 @@ p::before{
                 }
 p{font-weight:bold;
  }
+#bord{
+         border:1em solid blue;
+         margin-right:60em;
+         padding-right:0.5em;
+ }
+     
