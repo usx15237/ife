@@ -1,0 +1,4 @@
+#back{background:url("Blue-rule.png");}
+p::before{content:url("Yellow-pin.png");}
+.p1::after{content:"第一段结束了";}
+.p2::after{content:"第二段结束了";}
