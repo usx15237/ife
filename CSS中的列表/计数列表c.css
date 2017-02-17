@@ -1,0 +1,6 @@
+h1.number{counter-reset:mynumber;}
+p.number::before{
+                  content: counter(mynumber)": ";
+                  counter-increment:mynumber;
+                 }
+<!--尝试了一下列表，<ul class="number">的形式貌似不行-->
