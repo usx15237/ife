@@ -1,0 +1,14 @@
+#parent-div
+           {
+            position:relative;
+            font:bold 200% sans-serif;
+            }
+#forward,#back
+            {
+            position:absolute;
+            margin:0px;
+            top:0px;
+            left:0px;
+            }
+<!--top为0px和left为0px确保了两个斜杠位置固定在左上方-->
+<!--sans-serif是一种西方字体-->

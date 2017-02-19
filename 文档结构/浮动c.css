@@ -1,0 +1,25 @@
+body{
+    counter-reset:headnum;
+    }
+h1::before{
+                  content: "(" counter(headnum,upper-latin)")";
+                  counter-increment:headnum;
+                 }
+h1{
+          clear:left;
+          counter-reset:mynumber;
+         }
+p::before{
+                  content: counter(mynumber)": ";
+                  counter-increment:mynumber;
+                }
+p{font-weight:bold;
+ }
+#bord{
+         border:1em solid blue;
+         margin-right:60em;
+         padding-right:0.5em;
+ }
+ul{
+    float:left;
+}

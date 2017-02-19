@@ -1,0 +1,17 @@
+h1 strong
+{
+    color:red;
+}
+<!--后代选择器，从h1的后代元素中找tag为strong的，施加效果-->
+
+h2>em
+{
+    color:green;
+}
+<!--子元素选择器，从h2的子元素中找tag为em的，施加效果-->
+
+h3>strong
+{
+    color:yellow;
+}
+<!--子元素选择器，从h2的子元素中找tag为strong的，施加效果,找不到，所以没效果-->
