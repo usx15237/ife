@@ -1,0 +1,66 @@
+#demo-table
+     {
+    font:100% scans-serif;
+    background-color:#efe;
+    border-collapse:collapse;/*重要，是设置表格单边线的方法*/
+    empty-cells:show;/*是否显示表格中空单元格的边框和背景*/
+    border:1px solid #7a7;/*这里设置的是整个表格的外框线*/
+    }
+    #demo-table>caption
+    {
+    text-align:left;/*设置文本位置*/
+    font-weight:bold;
+    font-size:200%;
+    border-bottom:.2em solid #4ca;/*设置下边框宽度，样式，颜色*/
+    margin-bottom:.5em;/*设置下外边距宽度*/
+  }
+  #demo-table th,
+  #demo-table td
+  {
+      text-aligin:right;
+      padding-right:.5em;
+  }
+  #demo-table th
+  {
+      text-weight:bold;
+      padding-left:.5em;
+  }
+  #demo-table>thead>tr:first-child>th
+  {
+      text-aligin:center;
+      color:blue;
+  }
+  #demo-table>thead>tr+tr>th
+  {
+      font-style:italic;
+      color:gray;
+  }
+  #demo-table sup
+  {
+      font-size:75%;
+  }
+  #demo-table td/*调整内容为数据的单元格的样式*/
+  {
+      background-color:#cef;
+      padding:.5em .5em .5em 3em;
+  }
+  #demo-table tfoot
+  {
+      font-weight:bold;
+  }
+  #demo-table tfoot th
+  {
+      color:blue;
+  }
+  #demo-table tfoot th:after
+  {
+      content:":";
+  }    
+  #demo-table>tfoot td
+  {
+      background-color:#cee;
+  }
+  #demo-table>tfoot>tr:first-child td
+  {
+      border-top:.2em solid #7a7;/*在tfoot上方设置边框*/
+  }
