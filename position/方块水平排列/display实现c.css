@@ -1,0 +1,20 @@
+
+#l1 { 
+   background: green; 
+   width: 300px; 
+   height: 100px; 
+   display: inline-block; 
+   margin: 20px; 
+   color: white; 
+}
+#l2
+{
+   background: green; 
+   width: 300px; 
+   height: 200px; 
+   display: inline-block; 
+   margin: 20px; 
+   color: white;  
+}
+/*会发现，用display: inline-block;可以解决float带来的因高度不同而导致排布错位的问题*/
+/*margin可以理解为元素的地盘。值越大，地盘越大*/

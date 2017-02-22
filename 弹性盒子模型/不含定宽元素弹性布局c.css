@@ -1,0 +1,23 @@
+.test_box
+{
+  display:-webkit-box;
+  width: 800px;
+  margin: 40px;
+  padding: 20px;
+  background: #f0f3f9;
+}
+.list_one
+{
+  background:lightblue;
+  -webkit-box-flex:3;
+}
+.list_two
+{
+  background:lightgray;
+  -webkit-box-flex:1;
+}
+.list_three
+{
+  background:lightgreen;
+  -webkit-box-flex:1;
+}
