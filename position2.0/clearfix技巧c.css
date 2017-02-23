@@ -1,0 +1,21 @@
+.box-set:before,
+.box-set:after {
+  content: "";
+  display: table;
+}
+.box-set:after {
+  clear: both;
+}
+.box-set {
+  *zoom: 1;
+}
+.box-set {
+  background: #e8eae9;
+}
+.box {
+  background: #8ec63f;
+  height: 100px;
+  float: left;
+  margin: 10px;
+  width: 200px;
+}	
