@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <link rel="stylesheet" href="2016任务二c.css">
+    <title>task_1</title>
+</head>
+<!-- <head>标签中的元素用于指引浏览器在哪里找样式表等，而<h>标签用于标题分级-->
+<body>
+<div class="div_1">
+<ul>
+    <li><a href="#">导航链接一</a></li>
+    <li><a href="#">导航链接二</a></li>
+    <li><a href="#">导航链接三</a></li>
+    <li><a href="#">导航链接四</a></li>
+</ul>
+</div>
+<div class="div_2">
+<article>
+    <h2>文章一级标题</h2>
+    <h3>文章二级标题</h3>
+    <!-- h1>h2>h3-->
+    <p>文章作者 文章发表时间</p>
+    <!--<h>,<p>结束后会自动空一行-->
+    <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<br>换行了<br>还是那个很长很长的段落，
+    还是那个很长很长的段落，还是那个很长很长的段落，还是那个很长很长的段落，<a href="http://ife.baidu.com" target=_blank> 这里有一个链接点击后打开新窗口链接到http://ife.baidu.com,</a>
+    <a href="http://ife.baidu.com" target=_self> 这里还有一个链接点击后打开从本窗口链接到http://ife.baidu.com,</a>还是那个很长很长的段落，还是那个很长很长的段落，<strong>这里有些粗体字
+    </strong>还是那个很长很长的段落，还是那个很长很长的段落还是那个很长很长的段落，还是那个很长很长的段落,好了这段完了。</p>
+    </article>
+</div>
+    <!--两种链接方式-->
+ <div class="div_2">
+<h1>少逼逼，直接上图</h1>
+    <img src="http://avatar.csdn.net/D/5/2/1_tc_to_top.jpg">
+    <!--表示图片的路径，来自站内或其它站点-->
+<h2>最后一篇文章一级标题</h2>
+<h3>文章二级标题</h3>
+    <p>文章作者 文章发表时间</p>
+<ol>
+    <li>列表项目一</li>
+    <li>列表项目二</li>
+    <li>列表项目三</li>
+    <li>列表项目四</li>
+</ol>
+</div>
+<!--排序的list-->
+<div class="div_2">
+<table id="demo-table" border='1'>
+<caption>下面是一个表格</caption>
+    <thead>
+    <tr>
+        <td>表头</td>
+        <td>表头</td>
+        <td>表头</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>表内容单元格</td>
+        <td>表内容单元格</td>
+        <td><a href="http://ife.baidu.com">操作</a></td>
+    </tr>
+    </tbody>
+    <tr>
+        <td>表内容单元格</td>
+        <td>表内容单元格</td>
+        <td><a href="http://ife.baidu.com">操作</a></td>
+    </tr>
+    <tr>
+        <td>表内容单元格</td>
+        <td>表内容单元格</td>
+        <td><a href="http://ife.baidu.com">操作</a></td>
+    </tr>
+    <tr>
+        <td>表内容单元格</td>
+        <td>表内容单元格</td>
+        <td><a href="http://ife.baidu.com">操作</a></td>
+    </tr> 
+    <tr>
+        <td>表内容单元格</td>
+        <td>表内容单元格</td>
+        <td><a href="http://ife.baidu.com">操作</a></td>
+    </tr>
+    <tfoot>
+    <tr>
+        <td>总计</td>
+        <td colspan="2">1000</td>
+   </tr>
+   </tfoot>
+</table>
+</div>
+<div class="div_2">
+<h2 class="hh2">这里以后是一个侧栏，这是侧栏的标题</h2>
+<h3 class="hh2">侧栏注册窗口标题</h3>
+<form>
+    <label for="EMA1">请输入邮箱地址</label>
+    <!--label中的for内容需与input中的id内容一致,一个方面的内容就有一个<label>-->
+    <input type="txt" name="email" id="EMA1">
+    <!--type表示输入内容的性质，name表示输入内容的名称，id表示输入内容的编号-->
+</form>
+<br>
+<br>
+<form>
+    <label for="PASS1">请输入密码</label>
+    <input type="password" name="pass" id="PASS1">
+    <!--password会将输入内容遮掩-->
+</form>
+<br>
+<br>
+<br>
+<form>
+    <label>性别</label>
+    <!--单选按钮不需要for-->
+    <input type="radio" checked="checked" name="sex" value="male" \>男
+    <!--checked="checked"表示预设选项，"radio"表示单选按钮，其中value必需-->
+    <input type="radio" name="sex" value="female" \>女
+</form>
+<br>
+<form>
+    <label>城市</label>
+    <select>
+    <!--<option>表示选择列表-->
+    <option>北京</option>
+    <option selected="selected">上海</option>
+    <option>深圳</option>
+    <option>浙江</option>
+    </select>
+<br>
+<br>
+    <label>爱好</label>
+    <input type="checkbox" checked="checked" name="hobby" value="sports" \>运动
+    <input type="checkbox" name="hobby" value="art" \>艺术
+    <input type="checkbox" name="hobby" value="science" \>科学
+<br>
+<br>
+    <label>个人描述</label><br>
+    <textarea name="message" row="3" cols="40">
+    在此输入内容
+    </textarea>
+    <!--row表示行数,cols表示列数-->
+<br> 
+<br>
+    <input type="submit" value="submit" id="button">
+    <input type="reset" value="reset" id="button">    
+</form>
+</div>
+</body>
+</html>
+
+
+
+
+

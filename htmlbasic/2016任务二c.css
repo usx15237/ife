@@ -1,0 +1,79 @@
+body{
+    font-family: "Microsoft Yahei";
+    background-color: #ccc;
+    margin: 0 auto;
+ }
+.div_1{
+    width: 100%;
+    height: 80px;
+    background-color: #333333;
+}
+.div_1 ul
+{
+    float:right;
+}
+.div_1 li
+{
+     color: #fff;
+     line-height:60px;/*行高属性，在这里用来设置这行字所处的高度*/
+     display:inline;/*将作为块级元素的<li>改为行内元素*/
+     margin-right：10px/*这里用来设置四个导航标题的间距*/  
+}
+.div_1 a:hover
+{
+    color:yellow;
+}
+.div_2{
+    width: 90%;
+    margin:20px auto;
+    padding:20px;
+    height:auto;/*由于块容量无法估计，采用auto根据块内内容自动调节高度*/
+    background-color: #fff;
+}
+.hh2
+{
+    text-align:center;
+}
+#demo-table
+     {
+    width:100%;
+    font:100% scans-serif;
+    background-color:#efe;
+    border-collapse:collapse;/*重要，是设置表格单边线的方法*/
+     }
+ #demo-table thead
+ {
+    background-color: #333;
+    color: #fff;
+ }
+  #demo-table tfoot
+ {
+    background-color:#999;
+    color: #fff;
+ }
+ label
+ {
+     display:inline-block;
+     width: 40%;
+     text-align:right;
+ }
+ textarea
+ {
+     margin-left:430px;
+ }
+ /*行内元素转化为块级元素的方法：display:inline-block;或者display:block,前者同时留存了行内元素不换行的特性*/
+ #button
+ {
+     width: 90%;
+     height:40px;
+     margin-left:38px;
+     background-color: #3355D0;
+     border-radius:10px;/*设置边框四角弧度*/
+ }
+ /*li,input属于块级元素;*/
+ /*只有块级元素可以利用width设置自身宽度（百分比或px）*/
+ /*出于未知原因，以<body>为父元素的<div>可以通过 margin:20px auto; 调整左右间距，而其它元素只能通过  margin-left:38px  形式自己调节;*/
+
+ 
+ 
+
