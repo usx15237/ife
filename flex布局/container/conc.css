@@ -1,0 +1,30 @@
+.child
+{
+  width: 100px;
+  height: 50px;
+  background:white;
+  margin: 10px;
+}
+.parent 
+{
+  border:1px soild black;
+  display:flex;
+  background:#ddd;
+  flex-direction:row;
+  /*flex-direction:row-reverse;主轴方向倒置效果*/
+  /*flex-wrap:wrap;换行效果*/
+  /*flex-direction:column-reverse;侧轴方向倒置效果*/
+  /*justify-content:center;产生主轴居中效果*/
+  /*justify-content:space-between;空间放到中间效果*/
+  /*justify-content:space-around;空间放到周围效果*/
+  /*justify-content:start向起点靠*/
+  /*justify-content:end向终点靠*/
+  
+  /*.parent中align-items:stretch;所有子元素高度为侧轴最高元素高度*/
+  
+  
+  /*下列用法的前提是.parent中指明高度*/
+  /*.parent中align-items:flex-start;子元素头部沿侧轴起点对齐*/
+  /*.parent中align-items:flex-end;子元素头部沿侧轴终点对齐*/
+  /*.parent中align-items:center;子元素沿侧轴居中对齐*/
+}

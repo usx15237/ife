@@ -1,0 +1,25 @@
+*{margin:0;
+  padding:0;}/*使所有元素都遵循一定规则，可被覆写*/
+main
+{
+  width:400px;
+  height:auto;
+  border:1px solid black;
+}
+ul
+{
+  margin:5px auto;
+  list-style:none;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-around;/*ul一定要注意令padding:0;*/
+}
+ul>li
+{
+  margin:5px;
+  width:100px;
+  height:100px;
+  border:1px solid red; 
+  background:#ddd;
+}

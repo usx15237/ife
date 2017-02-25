@@ -1,0 +1,19 @@
+.child
+{
+  margin:2px;
+  width: 100px;
+  height:auto;
+  background:white;
+}
+.child:nth-child(3)
+{
+   align-self:flex-end;
+   /*对父元素中的 align-items:实现覆写*/
+}
+.parent 
+{
+  display:flex;
+  background:#ddd;
+  align-items:flex-start;
+  justify-content:space-around;
+}

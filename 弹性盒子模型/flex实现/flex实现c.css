@@ -1,0 +1,25 @@
+.child
+{
+  margin:2px;
+  width: auto;
+  height:70px;
+  background:white;
+}
+.child:nth-child(1)
+{
+  flex-grow:2;
+}
+.child:nth-child(1)
+{
+  flex-grow:1;
+}
+.child:nth-child(1)
+{
+  flex-grow:1;
+}
+.parent 
+{
+  display:flex;
+  background:#ddd;
+}
+/*好像定宽下分配无法解决*/

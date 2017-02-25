@@ -1,0 +1,40 @@
+body
+{
+  width:100%;
+  height:100vh;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;/*灰块的完美居中效果是采用了display:flex;中的justify-content:center;和 align-items:center;*/
+}
+.container
+{
+   width:400px;
+   height:200px;
+   background:#ccc;
+   position:absolute;
+   overflow:hidden;/*障眼法,使超出container部分隐藏起来*/
+}
+.item
+{
+  width:100px;
+  height:100px;
+  border-radius: 100px;
+  background:#fc0;
+  position:relative;/*两个1/4圆的位置设置是采用了position:absolute和position:relative;*/
+}
+.item1
+{
+ top:-50px;
+ left:-50px;/*top，left值取决于，未设置top，left值时原所在位置  和  目标位置*/
+}
+.item2
+{
+ top:50px;
+ left:350px;
+}
+
+
+
+
+

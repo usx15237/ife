@@ -1,0 +1,24 @@
+.child
+{
+  margin:2px;
+  width: 100px;
+  height:auto;
+  background:white;
+}
+.child:nth-child(1)
+{
+  order:3;
+}
+.child:nth-child(2)
+{
+   order:2;
+}
+.child:nth-child(3)
+{
+   order:1;
+}
+.parent 
+{
+  display:flex;
+  background:#ddd;
+}

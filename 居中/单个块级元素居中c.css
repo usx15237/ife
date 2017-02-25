@@ -1,0 +1,64 @@
+body {
+  background: #f06d06;
+  font-size: 80%;
+}
+/*1.利用text-align:center;display: inline-block;居中*/
+/*main
+{
+  background: white;
+  padding:100px;  
+  width: 80%;
+  height:auto;
+  margin:10px auto;
+  text-align:center;
+}
+div.center-me 
+{
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 15px;
+  width: 100px;
+  height:auto;
+  text-align:left;
+}*/
+
+
+/*2.利用margin:10px auto;居中
+main
+{
+  background: white;
+  padding:100px;  
+  width: 80%;
+  height:auto;
+  margin:10px auto;
+}
+div.center-me 
+{
+  margin:10px auto;
+  background: black;
+  color: white;
+  padding: 15px;
+  width: 100px;
+  height:auto;
+  text-align:left;
+}*/
+/*利用flex布局中的display:flex; justify-content:center;居中*/
+main
+{
+  display:flex;
+  justify-content:center;
+  background: white;
+  padding:100px;  
+  width: 80%;
+  height:auto;
+  margin:10px auto;
+}
+div.center-me 
+{
+  background: black;
+  color: white;
+  padding: 15px;
+  width: 100px;
+  height:auto;
+}
