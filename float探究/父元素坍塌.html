@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<style>
+	*
+	{
+	margin: 0;
+	padding: 0;
+	}
+	.mycation
+	{
+	width: 400px;
+	background-color:yellow;
+	height:100px;/*如果不加这一句，当.left和.right设置为float后，二者脱离文档流，.mycation内容为空，而块级元素内容为空时height若无设置值，默认为0.这种现象被称为父元素坍塌*/
+	}
+	.son
+	{
+     width: 40%;  
+     height: 50px; 
+	}	
+	.left
+	{
+	 float:left;
+	 background-color: green;
+	}
+	.right
+	{
+	float:right;
+	background-color: red;
+	}
+	</style>
+</head>
+<body>
+	<div class="mycation">
+		<div class="son left">	</div>
+        <div class="son right">	</div>
+	</div>
+</body>
+</html>

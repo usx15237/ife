@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<style>
+	*
+	{
+     margin: 0;
+     padding:0;
+	}	
+	div
+	{
+	width: 50%;
+	height: 400px;
+	}
+	.left
+	{
+     background-color: red;
+	}
+	.right
+	{
+	margin-top:-400px;
+	margin-left:660px;
+    background-color: green;
+	}/*并排布局上，用float会对其它元素产生影响；用padding会对盒子背景大小产生影响；利用margin的移动是个不错的选择*/
+	</style>
+</head>
+<body>
+	<div class="left"></div>
+	<div class="right"></div>
+</body>
+</html>

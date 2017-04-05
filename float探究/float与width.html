@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<style>
+	*
+	{
+	margin: 0;
+	padding:0;
+	}	
+	#contain
+	{
+	width: 300px;
+	height: 400px;
+	background-color: yellow;
+	}
+	ul
+	{
+	list-style: none;
+	width: 100%;
+	}
+	li
+	{
+	float: left;
+	width: 10%;/*如果这里设置为width,就无法实现浮动效果了，所以在给元素设置float前必须先设置好width(由于li,p等元素默认宽度为父级的100%,很容易忽略掉)*/
+	overflow: hidden;
+	}
+	</style>
+</head>
+<body>
+	<div id="contain">
+	<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>	
+	</div>
+</body>
+</html>

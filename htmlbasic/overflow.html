@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.box1
+	{
+      height:40px; 
+      width:70%;
+      background-color: #3cc;
+	}	
+	.box2
+	{
+      height: 40px;
+      width: 70%;
+      overflow:scroll;/*auto:根据内容自动判断是否添加滚动条。visible:内容始终可见。hidden:隐藏超出限定width和height的内容。scroll:始终显示滚动条*/
+      background-color: #CCC;
+	}
+	</style>
+</head>
+<body>
+	<div class="box1">第一个盒子高度是固定的,但盒子里信息过多，超出内容属性所限定的大小，盒子的高度将自动放大</div>
+	<div class="box2">第二个盒子高度和第一个盒子一样，是固定的，但设置了overflow属性为auto，出现滚动条，盒子高度不变。</div>
+</body>
+</html>

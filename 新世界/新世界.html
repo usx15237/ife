@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*
+		{
+			border: none;
+			margin:0;
+			padding:0;
+		}
+		body
+		{
+			width: 100%;
+		}
+		.导航
+		{
+			margin-top: 10px;
+			width: 100%;
+			height: 50px;
+		}
+		a
+		{
+			display: inline-block;
+			height: 100%;
+			text-decoration: none;
+		}
+		.导航 a:link
+		{
+			color: black;
+		}
+		.导航 a:hover
+		{
+			font-weight: bolder;
+			color: #FF4000;
+			border-bottom: 5px solid #DF3A01;
+		}
+		#p1
+		{
+			width: 80px;
+			height: 100%;
+			font-size: 26px;
+			background: url(images/icon-1.png) no-repeat;
+			background-size: 30px 40px;
+			padding-left: 40px;/*控制书本背景图片与“新世界”距离*/
+			margin-left:50px;/*控制书本背景图片与浏览器左端距离*/
+			float: left;
+		}
+		#p7,#p6,#p5,#p4,#p3,#p2
+		{
+			width: 80px;
+			height: 100%;
+			margin-left: 30px;
+			float: right;      
+			text-align: center;
+		}
+		#p2
+		{
+			background: url(images/icon-2.jpg) no-repeat;
+			background-size: 19px 20px;
+			padding-left: 17px;/*控制书本背景图片与“新世界”距离*/
+			margin-left:50px;/*控制书本背景图片与浏览器左端距离*/
+		}
+		.time
+		{
+			color: white;
+			width: 100%;
+			height: 800px;
+			background:url(images/pic01.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		.time h1
+		{
+
+			font-size: 60px;
+			position: relative;
+			padding-left: 150px;
+			top:320px;
+		}
+		.come
+		{
+			position: relative;
+			font-size: 26px;
+			width: 380px;
+			top: 330px;
+			left:170px;
+		}
+		button.start
+		{
+			color: white;
+			font-size: 40px;
+			position: relative;
+			top:380px;
+			left:165px;
+			height: 79px;
+			width: 340px;
+			background-color:#FF8000;
+			text-align: center;
+		}
+		.start:hover,#sousuo:hover
+		{
+		background-color: red;
+		font-weight: bolder;
+		}
+		.four
+		{
+			width: 100%;
+			display: flex;
+			height: 300px;
+		}
+		.d
+		{
+			text-align: center;
+			height: 100px;
+			flex-grow: 1;
+		}
+		.d img
+		{
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		.d p
+		{    
+			border-right: 2px solid #04B4AE;
+			height: 70px;
+			color: #04B4AE;
+			text-align: center;
+		}
+		.know
+		{
+			height: 160px;
+			padding: 100px 10px;
+			text-align: center;
+			color: #04B4AE;
+			font-size:48px;
+			font-weight: lighter;
+			background-color: #A9F5F2;
+		}
+		.know p
+		{
+			padding-top: 39px;
+		}
+		.map
+		{
+			width: 100%;
+			height: 390px;
+			background: url(images/pic02.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		.city
+		{
+		    padding-top: 60px;
+			text-align: center;
+			color: white;
+		}
+		#fir
+		{
+			font-size: 2em;
+		}
+	    .find
+	    {
+	    padding-top: 10px;
+	    width: 100%;
+	    display: flex;
+	    justify-content: space-around;
+
+	    }
+        .find select
+        {
+        flex-grow: 1;
+        height: 40px;
+       margin: 40px;
+       color: #8A0829;
+        }
+        .find option
+        {
+        background-color: red;
+        color: #8A0829; 
+        height: 40px;
+        }
+        #sousuo
+        {
+        margin: 40px;
+        height: 40px;
+        flex-grow: 1;
+        width: 60px;
+        color:white;
+        background-color: #FF8000;
+        font-size: 20px;
+        }
+        .activity
+        {
+        padding-left: 150px;
+        padding-top: 70px;
+        display: flex;
+        padding-right: 150px;
+        height: 500px;
+        justify-content: space-around;
+       
+        }
+        .activity a
+        {
+        text-align: center;
+        font-size: 20px;
+        color: #58ACFA;
+        }
+        .activity a:hover
+        {
+        position: relative;
+        top: 20px;
+        width: 300px;
+        font-weight: bolder;
+        letter-spacing: 10px;
+        color: #FF0000;
+        }
+        .lr
+        {
+         height: 1200px;
+         display: flex;
+         flex-wrap: wrap;
+        }
+        .left
+        {
+        color: white;
+        text-align: center;
+        background: url(images/pic07.jpg) no-repeat;
+        background-size: 100% 100%;
+        width: 66.6%;
+        height: 50%;
+        }
+        .left h1
+        {
+         position: relative;
+         top: 130px;
+         font-weight: lighter;
+         font-size: 50px;
+        }
+        .left h2
+        {
+        position: relative;
+        top: 90px;
+        font-size: 170px;
+        font-weight: 400;
+        }
+        .left p
+        {
+        font-size: 25px;
+        position: relative;
+        top: 70px;
+        }
+        .right
+        {
+        width:33.4%;
+        height: 50%;
+        }
+        .c1,.c2,.c3
+        {
+        width: 33.3%;
+        height: 50%;
+        }
+        .c1
+        {
+        background-color:#FE642E;
+        }
+        .c3
+        {
+        background: url(images/pic08.jpg) no-repeat;
+        background-size: 100% 100%;
+        }
+	</style>
+</head>
+<body>
+	<div class="导航">
+		<p id="p1">新世界</p>
+		<p id="p2"><a href="#">登录</a></p>
+		<p id="p3"><a href="#">关于我们</a></p>
+		<p id="p4"><a href="#">爱心社区</a></p>
+		<p id="p5"><a href="#">项目介绍</a></p>
+		<p id="p6"><a href="#">最新活动</a></p>
+		<p id="p7"><a href="#">首页</a></p>
+	</div>
+	<div class="time">
+		<h1>Time  of new life</h1>
+		<p class="come">新时代，年轻的人们让我们一起体验新生活，享受新生活</p>
+		<button class="start">开始体验</button>
+		</div>
+	<div class="four">
+		<div class="d d1"><img src="images/icon-3.jpg" alt=""><p>打造全新的世界观，让你更<br>爱你的生活</p></div>
+		<div class="d d2"><img src="images/icon-4.jpg" alt=""><p>丰富多彩的公益活动，发<br>挥新世界的主人公意识</p></div>
+		<div class="d d3"><img src="images/icon-5.jpg" alt=""><p>时尚的新理念，超前体验<br>未知的生活</p></div>
+		<div class="d d4"><img src="images/icon-6.jpg" alt=""><p>完善的培养机制，培养你<br>全新的世界观</p></div>
+	</div>
+	<div class="know">
+		<img src="images/icon-1.png" alt="">
+		<p>关于新世界，你不知道的还有什么？</p>
+	</div>
+	<div class="map">
+		<div class="city">	
+			<p id="fir">查找新世界<span>城市</span>活动信息</p>
+			<br>	
+			<p id="sec">每个城市有不同的活动信息，请自主查询您所需要了解的城市</p>
+			<div class="find">
+				<select name="country" id="Country">
+					<option value="China" selected="selected">中国</option>
+				    <option value="England">英国</option>
+					<option value="France">法国</option>	
+				</select>
+				<select name="prov" id="Prov">
+					<option value="Zhejiang" selected="selected">浙江</option>
+					<option value="Guangxi">广西</option>
+					<option value="Yunnan">云南</option>	
+				</select>
+				<select name="city" id="City">
+					<option value="Hangzhou" selected="selected">杭州</option>
+					<option value="Shanghai">上海</option>
+					<option value="Beijing">北京</option>	
+				</select>
+            <button id="sousuo">搜&nbsp;&nbsp;&nbsp;&nbsp;索</button>
+			</div>
+		</div>
+	</div>
+	<div class="activity">
+		<div><a href="#"><img src="images/pic03.jpg" alt=""><h3>北京活动</h3><p>新社区大联盟</p></a></div>
+		<div><a href="#"><img src="images/pic04.jpg" alt=""><h3>上海活动</h3><p>夜上海新景观探索</p></a></div>
+		<div><a href="#"><img src="images/pic05.jpg" alt=""><h3>深圳活动</h3><p>全新海岸线观点站</p></a></div>
+		<div><a href="#"><img src="images/pic06.jpg" alt=""><h3>香港活动</h3><p>奢侈消费大派送</p></a></div>
+	</div>
+	<div class="lr">
+		<div class="left"><h1>新世界</h1><h2>TIME</h2><p>@新世界 - 北京<br>	2016.04.01</p></div>
+		<div class="right"></div>
+		<div class="c1"></div>
+		<div class="c2"></div>
+		<div class="c3"></div>
+	</div>
+	<div></div>
+</body>
+</html>

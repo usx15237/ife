@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<style>
+	*
+	{
+    margin:0;
+    padding:0;
+	}
+    body
+    {
+    padding-left: 100px;
+    }
+    div
+	{
+    width: 400px;
+    height: 400px;
+	}	
+	.one
+	{
+    background-color: green;
+    margin-left: 100px;/*以相邻元素的padding外层右方为参照，盒子向右扩展100px*/
+    margin-bottom: 100px;/*以盒子的border外层下方为参照，盒子向下扩展100px*/
+    /*当two为block时,one与two会发生margin相融现象,在one的margin-bottom为100px；two的margin-top为150px;情况下,两个盒子的实际间距
+   为150px;而当two为inline-block时,则不会有此现象*/
+	}	
+	.two
+	{
+    display: inline-block;/*只有当div.A与div.B皆为inline-block时，才可并行*/
+	margin-top: 150px;/*以相邻元素的padding外层下方为参照，盒子向下扩展150px*/
+	margin-left: -100px;
+	margin-right: 100px;/*以盒子的border外层右方为参照，盒子向右扩展100px*/
+    background-color: red;
+	}
+	.three
+	{
+	display: inline-block;
+    margin-left: 100px;
+    background-color: yellow;
+	}
+	</style>
+</head>
+<body>
+	<div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>

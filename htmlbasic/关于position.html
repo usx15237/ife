@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<style>	
+	*
+	{
+	margin: 0;
+	padding:0;
+	}
+	img
+	{
+	width: 100px;
+	height: 100px;
+	}
+    .st
+    {
+    position: absolute;/*以父元素位置为参考，进行定位，当父元素无position值时,以body位置为参考,结果会导致元素脱离文档流*/
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    }
+    .st1 div
+    {
+    position: relative;/*以元素原位置为参考，进行定位，位移后元素不脱离文档流，且原位置所在空间保留*/
+    left: 100px;
+    top: 100px;
+    }
+    /*脱离文档流的意思是，其它的元素在定位时会当做没看到它*/
+	</style>
+</head>
+<body>
+	<div class="st">
+		<div class="st1" ><div>何来吞黄金，服白玉</div><img src="1.gif" alt=""></div>
+		<div><img src="2.gif" alt=""></div>
+	</div>
+	<div>月寒日暖来煎人寿</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+		body
+		{
+			margin: 40px auto;
+			width: 94%;
+		}
+		.head
+		{
+			background:url(imes/head.png) no-repeat;
+			width: 100%;
+			height: 190px;/*如果图片作为背景图片插入，需要先设置好div内容的width和height,再设置background-size*/
+			background-size: 100% 100%;
+		}
+		ul
+		{
+		list-style: none;
+		}
+		li
+		{
+		background:url(imes/bg.png) no-repeat;
+		background-size: 100% 100%;
+		height: 360px;
+		}
+		a
+		{
+		display:flex;
+		height: 100%;
+		align-items: center;
+        font-size: 40px;
+        font-family: "微软雅黑";
+		text-decoration: none;
+		color: black;
+		}
+		p
+		{
+		
+		}
+		.p1
+		{
+	  text-align: right;
+	  padding-left: 100px;
+		}
+		.p2
+		{
+         padding-left: 230px;
+		}
+		.p3
+		{
+		padding-left: 230px;
+		}
+		.sq
+		{
+		padding-left: 55px;
+		}
+	</style>
+</head>
+<body>
+	<div class="head"><!--<img src="imes/head.png" alt="">--></div>
+	<!--直接插入图片，图片大小会决定div内容的width和height-->
+	<ul>
+		<li>
+			<a href="#">
+				<p class="p1">	
+					印刷流程<br>
+					广告设计<br>
+					企业形象设计
+				</p><p class="p2">1</p><p class="p3">平面设计</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<p class="p1 sq">页面设计<br>
+					HTML+CSS<br>
+					JS和JQ交互特效
+				</p><p class="p2">2</p><p class="p3">网页设计</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<p class="p1">视觉创意设计<br>
+					人机交互原则<br>
+					UI设计规范
+				</p><p class="p2">3</p><p class="p3">UI设计</p>
+			</a>	
+			</li>
+		</ul>
+	</body>
+	</html>
+	<!--伟大的发明 flex-->
